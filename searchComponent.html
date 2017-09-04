@@ -1,9 +1,9 @@
-<input class="SkSearchComponent-input" ng-model="search" ng-change="$ctrl.searchUsers()"/>
+<input class="SkSearchComponent-input" ng-model="search" ng-change="$ctrl.searchUsers()" placeholder="Search users..." tabindex="0"/>
 
-<ul class="SkSearchComponent-results">
-    <li ng-repeat="user in $ctrl.newData">
-        <p>{{user.name}}</p>
+<ul class="SkSearchComponent-results" ng-if="$ctrl.isEmpty">
+    <li ng-repeat="user in $ctrl.newData" tabindex="-1">
+        <a href="#">
+            <span>{{user.name}}</span>
+        </a>
     </li>
 </ul>
-
-<p> Search Results: {{searchUsers}}</p>

@@ -5,6 +5,8 @@ angular.module('heroApp').component('searchComponent', {
   },
   controller: ['$scope', function($scope) {
     var $ctrl = this;
+
+    $ctrl.isEmpty = false;
     
     $ctrl.$onInit = function () {
       console.log($ctrl.searchData);
@@ -13,14 +15,14 @@ angular.module('heroApp').component('searchComponent', {
     $ctrl.searchUsers = function() {
       var filteredResults
 
+      $ctrl.isEmpty = ($scope.search.length === 0) ? false : true;
+
       filteredResults = _.filter($ctrl.searchData, (data) => {
-        return _.includes(data.name, $scope.search)
+        return _.includes(_.toLower(data.name), $scope.search)
       })
 
       $ctrl.newData = filteredResults
 
-
-      console.log($ctrl.newData);
       return filteredResults;
     }
   }]

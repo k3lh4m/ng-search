@@ -1,4 +1,10 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
 .SkContainer {
     margin: 0 auto;
-    width: 300px;
+    width: 350px;
 }
+
