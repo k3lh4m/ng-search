@@ -1,0 +1,9 @@
+<input class="SkSearchComponent-input" ng-model="search" ng-change="$ctrl.searchUsers()"/>
+
+<ul class="SkSearchComponent-results">
+    <li ng-repeat="user in $ctrl.newData">
+        <p>{{user.name}}</p>
+    </li>
+</ul>
+
+<p> Search Results: {{searchUsers}}</p>

@@ -1,0 +1,17 @@
+{
+  "name": "ui-search",
+  "version": "1.0.0",
+  "description": "Simple AngularJS UI Search Fesults",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run setup && npm run preprocess",
+    "preprocess": "suitcss index.css build/build.css", 
+    "setup": "npm install && mkdir -p build"
+  },
+  "author": "Sam Kelham",
+  "license": "ISC",
+  "devDependencies": {
+    "suitcss-preprocessor": "^4.0.0"
+  }
+}

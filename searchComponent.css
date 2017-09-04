@@ -1,0 +1,13 @@
+.SkSearchComponent {
+
+}
+
+.SkSearchComponent-input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box
+}
+
+.SkSearchComponent-results {
+
+}

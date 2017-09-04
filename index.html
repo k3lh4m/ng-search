@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" type="text/css" href="searchComponent.css">
+    <title>Angular JS - Search Component</title>
+</head>
+<body ng-app="heroApp">
+    <div ng-controller="MainCtrl as $ctrl">
+        <div class="SkContainer">
+            <search-component class="SkSearchComponent" search-data="$ctrl.jsonData" dummy-data="8"></search-component>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="app.js"></script>
+<script src="searchComponent.js"></script>
+</html>
