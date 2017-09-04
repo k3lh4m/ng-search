@@ -26,11 +26,13 @@
     border: 1px solid #e3e3e3;
     margin-top: 10px;
     border-radius: 15px;
+    overflow: hidden;
 }
 
 .SkSearchComponent-results li {
     list-style: none;
     border-bottom: 1px solid #e3e3e3;
+    overflow: hidden;
 }
 
 .SkSearchComponent-results li:last-child {
@@ -43,4 +45,20 @@
     text-decoration: none;
     padding: 13px 15px;
     margin: 0px 0px 0px 0px;
+    outline: none;
+}
+
+.SkSearchComponent-results a:focus,
+.SkSearchComponent-results a:hover {
+    color: #fff;
+    background-color: #f96332;
+}
+
+.SkName {
+    font-size: 16px;
+    display: block;
+}
+
+.SkEmail {
+    font-size: 12px;
 }

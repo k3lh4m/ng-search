@@ -3,7 +3,8 @@
 <ul class="SkSearchComponent-results" ng-if="$ctrl.isEmpty">
     <li ng-repeat="user in $ctrl.newData" tabindex="-1">
         <a href="#">
-            <span>{{user.name}}</span>
+            <span class="SkName">{{user.name}}</span>
+            <span class="SkEmail">{{user.email}}</span>
         </a>
     </li>
 </ul>
